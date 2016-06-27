@@ -1,0 +1,1820 @@
+java version "1.6.0_24"
+OpenJDK Runtime Environment (IcedTea6 1.11.4) (rhel-1.49.1.11.4.el6_3-x86_64)
+OpenJDK 64-Bit Server VM (build 20.0-b12, mixed mode)
+
+[premain: Installling RoadRunner Agent...]
+[main: RoadRunner Agent Loaded.]
+[main: Running in FAST Mode]
+[RR: Creating Fresh Meta Data]
+[RR: Creating Tool Chain]
+  [RR: Creating tool loader with path [file:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/rr/simple/, file:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/tools/]]
+  [RR: file:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/rr/simple/rrtools.properties]
+    [RR: [LOG, T, TL, S, P, N, C]]
+  [RR: 0.00200 sec]
+  [RR: file:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/tools/rrtools.properties]
+    [RR: [HB, FT, A, LS, RS, FT_CAS, PL, BE]]
+  [RR: 0.00 sec]
+  [RR: Extending States for tools/atomizer/AtomizerTool]
+  [RR: 0.00200 sec]
+  [RR: Transforming rr/state/ShadowThread]
+  [RR: done]
+  [RR: Transforming tools/atomizer/AtomizerTool]
+  [RR: done]
+  [RR:     complete chain: tools.atomizer.AtomizerTool -> Last]
+  [RR:        enter chain: [tools.atomizer.AtomizerTool, Last]]
+  [RR:         exit chain: [tools.atomizer.AtomizerTool, Last]]
+  [RR:      acquire chain: [tools.atomizer.AtomizerTool, Last]]
+  [RR:      release chain: [tools.atomizer.AtomizerTool, Last]]
+  [RR:       access chain: [tools.atomizer.AtomizerTool, Last]]
+  [RR: Read Fastpath code found in [Last]]
+  [RR: Write Fastpath code found in [Last]]
+[RR: 0.0290 sec]
+[RR: OPTIONS:]
+  [RR: (rr.state.agent.ThreadStateExtensionAgent) javaArgs             = JGFMolDynBenchSizeB ]
+  [RR: (rr.state.agent.ThreadStateExtensionAgent) noDecInline          = false               ]
+  [RR: (acme.util.Util)                   quiet                = false               ]
+  [RR: (acme.util.Util)                   logs                 = log                 ]
+  [RR: (acme.util.Util)                   out                  =                     ]
+  [RR: (acme.util.Util)                   err                  =                     ]
+  [RR: (rr.RRMain)                        noinst               = false               ]
+  [RR: (rr.RRMain)                        inst                 = INST                ]
+  [RR: (rr.RRMain)                        infThreads           = 0                   ]
+  [RR: (rr.RRMain)                        args                 = []                  ]
+  [RR: (acme.util.Debug)                  d                    = []                  ]
+  [RR: (rr.RRMain$4)                      help                 = false               ]
+  [RR: (rr.tool.RR)                       toolpath             = /home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/rr/simple:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/tools]
+  [RR: (rr.tool.RR)                       classpath            = .                   ]
+  [RR: (rr.tool.RR)                       tool                 = A                   ]
+  [RR: (rr.tool.RR)                       tools                = false               ]
+  [RR: (rr.tool.RR)                       noxml                = false               ]
+  [RR: (rr.tool.RR)                       constantGC           = false               ]
+  [RR: (rr.tool.RR)                       noFP                 = false               ]
+  [RR: (rr.tool.RR)                       noEnter              = false               ]
+  [RR: (rr.tool.RR)                       xml                  = log.xml             ]
+  [RR: (rr.tool.RR)                       pulse                =                     ]
+  [RR: (rr.tool.RR)                       maxTime              = 0                   ]
+  [RR: (rr.tool.RR)                       maxMem               = 10240               ]
+  [RR: (rr.tool.RR)                       maxTid               = 16                  ]
+  [RR: (rr.tool.RR)                       stacks               = false               ]
+  [RR: (rr.tool.RR)                       values               = false               ]
+  [RR: (rr.tool.RR)                       noTidGC              = false               ]
+  [RR: (rr.tool.RR)                       noEventReuse         = false               ]
+  [RR: (rr.loader.LoaderContext)          repository           =                     ]
+  [RR: (rr.meta.MetaDataInfoMaps)         meta                 = null                ]
+  [RR: (rr.meta.InstrumentationFilter)    methods              = [default=ACCEPT]    ]
+  [RR: (rr.meta.InstrumentationFilter)    fields               = ["-.*this\$.*", default=ACCEPT]]
+  [RR: (rr.meta.InstrumentationFilter)    lines                = [default=ACCEPT]    ]
+  [RR: (rr.meta.InstrumentationFilter)    classes              = ["-java..*", "-javax..*", "-com.sun..*", "-org.objectweb.asm..*", "-sun..*", "-rr..*", "-rrtools..*", "-acme..*", "-.*__\$rr_.*", default=ACCEPT]]
+  [RR: (rr.meta.InstrumentationFilter)    shadowThread         = ["-.*main\(\[Ljava/lang/String;\)V.*", "-.*run\(\)V.*", "+.*\$rr__Original.*", "-.*\$rr.*", "-.*\&lt;init\&gt;.*", "-.*\&lt;clinit\&gt;.*", default=ACCEPT]]
+  [RR: (rr.meta.InstrumentationFilter)    noop                 = [default=ACCEPT]    ]
+  [RR: (rr.instrument.classes.ThreadDataThunkInserter) noConstructor        = false               ]
+  [RR: (rr.instrument.classes.CloneFixer) noClone              = false               ]
+  [RR: (rr.instrument.Instrumentor)       dump                 =                     ]
+  [RR: (rr.instrument.Instrumentor)       field                = FINE                ]
+  [RR: (rr.instrument.Instrumentor)       fancy                = false               ]
+  [RR: (rr.instrument.Instrumentor)       arraySites           = false               ]
+  [RR: (rr.instrument.Instrumentor)       Use TestAcquires     = false               ]
+  [RR: (rr.tool.RREventGenerator)         nojoin               = false               ]
+  [RR: (rr.tool.RREventGenerator)         multiLoader          = false               ]
+  [RR: (rr.tool.RREventGenerator)         indices              = 2147483647          ]
+  [RR: (rr.state.update.Updaters)         updaters             = SAFE                ]
+  [RR: (rr.state.ArrayStateFactory)       array                = NONE                ]
+  [RR: (rr.barrier.BarrierMonitor)        nobarrier            = false               ]
+  [RR: (rr.state.AbstractArrayStateCache) noArrayLookupOpt     = false               ]
+  [RR: (rr.instrument.methods.ThreadDataInstructionAdapter) callSites            = false               ]
+  [RR: (rr.error.ErrorMessage)            maxWarn              = 100                 ]
+  [RR: (tools.atomizer.AtomizerTool)      noProtLocks          = false               ]
+  [RR: (rr.simple.MethodMonitoringTool)   atomics              = ["-.*main\(\[Ljava/lang/String;\)V", "-.*run\(\)V", default=ACCEPT]]
+[RR: 0.00700 sec]
+[RR: Installing DefineClassListener rr.loader.InstrumentingDefineClassLoader@60072ffb]
+[RR: System Class Path = [file:/home/biswass/workspace/benchmarks/javaGrande/classes/./]]
+[RR: Tool Init()]
+[RR: Running target]
+[main: ----- ----- ----- -----       Meep Meep.      ----- ----- ----- -----]
+[main: ]
+[main: Instrumenting JGFMolDynBenchSizeB (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Instrumenting harness/Callback (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Creating Free List With 16 Tids]
+[main: New Thread main with tid=0.]
+The no of threads has not been specified, defaulting to 1
+  
+[main: Instrumenting jgfutil/JGFInstrumentor (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 3 - Size B
+Executing on 1 thread
+
+===== Java Grande starting =====
+[main: Instrumenting moldyn/JGFMolDynBench (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Instrumenting jgfutil/JGFSection3 (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Instrumenting moldyn/md (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+  [main: Replace java/lang/Thread.start()V]
+  [main: Replace java/lang/Thread.join()V]
+[main: Instrumenting moldyn/Barrier (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+  [main: Fixing Potential Orphan moldyn/Barrier.__$rr___$rr_DoBarrier__$rr__Original___$rr__with_ThreadState_(ILrr/state/ShadowThread;)V]
+  [main: Fixing Potential Orphan moldyn/Barrier.__$rr_DoBarrier__$rr__with_ThreadState_(ILrr/state/ShadowThread;)V]
+[main: Instrumenting moldyn/TournamentBarrier (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Instrumenting jgfutil/JGFTimer (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: jgfutil/JGFInstrumentor.addTimer(Ljava/lang/String;Ljava/lang/String;I)V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_jgfutil/JGFTimer.size I@jgfutil/JGFTimer.java:31
+##    Commit Stack: <no stack>
+##     Error Cause: wr_jgfutil/JGFTimer.name Ljava/lang/String;@jgfutil/JGFTimer.java:43
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/JGFMolDynBench.JGFrun(I)V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_jgfutil/JGFTimer.size I@jgfutil/JGFTimer.java:31
+##    Commit Stack: <no stack>
+##     Error Cause: wr_jgfutil/JGFTimer.name Ljava/lang/String;@jgfutil/JGFTimer.java:43
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: jgfutil/JGFTimer.reset()V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_jgfutil/JGFTimer.time D@jgfutil/JGFTimer.java:78
+##    Commit Stack: <no stack>
+##     Error Cause: wr_jgfutil/JGFTimer.calls J@jgfutil/JGFTimer.java:79
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: jgfutil/JGFInstrumentor.addTimer(Ljava/lang/String;Ljava/lang/String;I)V
+##           Count: 2    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_jgfutil/JGFTimer.size I@jgfutil/JGFTimer.java:31
+##    Commit Stack: <no stack>
+##     Error Cause: wr_jgfutil/JGFTimer.name Ljava/lang/String;@jgfutil/JGFTimer.java:43
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: jgfutil/JGFTimer.reset()V
+##           Count: 2    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_jgfutil/JGFTimer.time D@jgfutil/JGFTimer.java:78
+##    Commit Stack: <no stack>
+##     Error Cause: wr_jgfutil/JGFTimer.calls J@jgfutil/JGFTimer.java:79
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/md.initialise()V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_moldyn/md.mm I@moldyn/md.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: wr_moldyn/md.PARTSIZE I@moldyn/md.java:59
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/JGFMolDynBench.JGFinitialise()V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_moldyn/md.mm I@moldyn/md.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: wr_moldyn/md.PARTSIZE I@moldyn/md.java:59
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/md.runiters()V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_moldyn/md.epot [D@moldyn/md.java:68
+##    Commit Stack: <no stack>
+##     Error Cause: wr_moldyn/md.vir [D@moldyn/md.java:69
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/JGFMolDynBench.JGFapplication()V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: wr_moldyn/md.epot [D@moldyn/md.java:68
+##    Commit Stack: <no stack>
+##     Error Cause: wr_moldyn/md.vir [D@moldyn/md.java:69
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+[main: Instrumenting moldyn/mdRunner (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Instrumenting moldyn/particle (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+[main: Instrumenting moldyn/random (Loader=0x002A5330 (class rr.RRMain$RRMainLoader))]
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 1    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 2    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 3    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 4    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 5    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 6    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 7    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 8    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 9    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 10    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 11    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 12    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 13    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 14    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 15    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 16    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 17    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 18    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 19    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 20    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 21    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 22    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 23    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 24    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 25    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 26    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 27    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 28    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 29    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 30    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 31    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 32    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 33    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 34    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 35    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 36    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 37    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 38    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 39    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 40    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 41    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 42    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 43    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 44    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 45    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 46    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 47    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 48    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 49    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 50    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 51    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 52    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 53    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 54    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 55    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 56    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 57    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 58    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 59    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 60    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 61    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 62    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 63    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 64    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 65    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 66    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 67    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 68    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 69    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 70    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 71    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 72    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 73    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 74    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 75    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 76    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 77    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 78    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 79    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 80    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 81    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 82    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 83    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 84    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 85    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 86    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 87    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 88    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 89    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 90    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 91    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 92    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 93    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 94    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 95    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 96    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 97    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 98    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 99    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+## 
+## =====================================================================
+## Atomicity Error
+## 
+##          Thread: 0    
+##           Blame: moldyn/TournamentBarrier.DoBarrier(I)V
+##           Count: 100    (max: 100)
+##     Enter Stack: <no stack>
+##    Commit Cause: rd_moldyn/TournamentBarrier.IsDone [Z@moldyn/TournamentBarrier.java:58
+##    Commit Stack: <no stack>
+##     Error Cause: rd_moldyn/Barrier.numThreads I@moldyn/TournamentBarrier.java:60
+##     Error Stack: <no stack>
+## =====================================================================
+## 
+Section3:MolDyn:Run:SizeB	21.291 (s) 	 1265884.9	 (Interactions/s)
+Section3:MolDyn:Total:SizeB	21.754 (s) 	 0.04596856	 (Solutions/s)
+===== Java Grande PASSED in 21841 msec =====
+[main: ]
+[main: ----- ----- ----- -----      Thpthpthpth.     ----- ----- ----- -----]
+[RR: 22.2 sec]
+[RR: Total Time: 22191]
+[RR: Tool Fini()]
+<entry>
+  <data> Mon Sep 24 17:28:47 EDT 2012 </data> 
+  <mode> FAST </mode> 
+  <timeout> NO </timeout> 
+  <options>
+    <option><name> javaArgs </name>           <value> JGFMolDynBenchSizeB  </value> </option>
+    <option><name> noDecInline </name>        <value> false </value> </option>
+    <option><name> quiet </name>              <value> false </value> </option>
+    <option><name> logs </name>               <value> log </value> </option>
+    <option><name> out </name>                <value>  </value>   </option>
+    <option><name> err </name>                <value>  </value>   </option>
+    <option><name> noinst </name>             <value> false </value> </option>
+    <option><name> inst </name>               <value> INST </value> </option>
+    <option><name> infThreads </name>         <value> 0 </value>  </option>
+    <option><name> args </name>               <value> [] </value> </option>
+    <option><name> d </name>                  <value> [] </value> </option>
+    <option><name> help </name>               <value> false </value> </option>
+    <option><name> toolpath </name>           <value> /home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/rr/simple:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/classes/tools </value> </option>
+    <option><name> classpath </name>          <value> . </value>  </option>
+    <option><name> tool </name>               <value> A </value>  </option>
+    <option><name> tools </name>              <value> false </value> </option>
+    <option><name> noxml </name>              <value> false </value> </option>
+    <option><name> constantGC </name>         <value> false </value> </option>
+    <option><name> noFP </name>               <value> false </value> </option>
+    <option><name> noEnter </name>            <value> false </value> </option>
+    <option><name> xml </name>                <value> log.xml </value> </option>
+    <option><name> pulse </name>              <value>  </value>   </option>
+    <option><name> maxTime </name>            <value> 0 </value>  </option>
+    <option><name> maxMem </name>             <value> 10240 </value> </option>
+    <option><name> maxTid </name>             <value> 16 </value> </option>
+    <option><name> stacks </name>             <value> false </value> </option>
+    <option><name> values </name>             <value> false </value> </option>
+    <option><name> noTidGC </name>            <value> false </value> </option>
+    <option><name> noEventReuse </name>       <value> false </value> </option>
+    <option><name> repository </name>         <value>  </value>   </option>
+    <option><name> meta </name>               <value> null </value> </option>
+    <option><name> methods </name>            <value> [default=ACCEPT] </value> </option>
+    <option><name> fields </name>             <value> ["-.*this\$.*", default=ACCEPT] </value> </option>
+    <option><name> lines </name>              <value> [default=ACCEPT] </value> </option>
+    <option><name> classes </name>            <value> ["-java..*", "-javax..*", "-com.sun..*", "-org.objectweb.asm..*", "-sun..*", "-rr..*", "-rrtools..*", "-acme..*", "-.*__\$rr_.*", default=ACCEPT] </value> </option>
+    <option><name> shadowThread </name>       <value> ["-.*main\(\[Ljava/lang/String;\)V.*", "-.*run\(\)V.*", "+.*\$rr__Original.*", "-.*\$rr.*", "-.*\&lt;init\&gt;.*", "-.*\&lt;clinit\&gt;.*", default=ACCEPT] </value> </option>
+    <option><name> noop </name>               <value> [default=ACCEPT] </value> </option>
+    <option><name> noConstructor </name>      <value> false </value> </option>
+    <option><name> noClone </name>            <value> false </value> </option>
+    <option><name> dump </name>               <value>  </value>   </option>
+    <option><name> field </name>              <value> FINE </value> </option>
+    <option><name> fancy </name>              <value> false </value> </option>
+    <option><name> arraySites </name>         <value> false </value> </option>
+    <option><name> Use TestAcquires </name>   <value> false </value> </option>
+    <option><name> nojoin </name>             <value> false </value> </option>
+    <option><name> multiLoader </name>        <value> false </value> </option>
+    <option><name> indices </name>            <value> 2147483647 </value> </option>
+    <option><name> updaters </name>           <value> SAFE </value> </option>
+    <option><name> array </name>              <value> NONE </value> </option>
+    <option><name> nobarrier </name>          <value> false </value> </option>
+    <option><name> noArrayLookupOpt </name>   <value> false </value> </option>
+    <option><name> callSites </name>          <value> false </value> </option>
+    <option><name> maxWarn </name>            <value> 100 </value> </option>
+    <option><name> noProtLocks </name>        <value> false </value> </option>
+    <option><name> atomics </name>            <value> ["-.*main\(\[Ljava/lang/String;\)V", "-.*run\(\)V", default=ACCEPT] </value> </option>
+    <option><name> sanity </name>             <value> false </value> </option>
+    <option><name> noInterrupt </name>        <value> false </value> </option>
+  </options>
+  <system>
+    <host> rain.cse.ohio-state.edu </host> 
+    <name> java.vm.version </name>     <value> 20.0-b12 </value> 
+    <name> java.vm.vendor </name>      <value> Sun Microsystems Inc. </value> 
+    <name> java.vm.name </name>        <value> OpenJDK 64-Bit Server VM </value> 
+    <name> java.class.path </name>     <value> /home/biswass/benchmarks/javaGrande:/home/biswass/Documents/rr/stephenfreund-RoadRunner-5ad3fbe/build/jar/rragent.jar </value> 
+    <name> os.name </name>             <value> Linux </value> 
+    <name> os.arch </name>             <value> amd64 </value> 
+    <name> os.version </name>          <value> 2.6.32-279.5.2.el6.x86_64 </value> 
+    <name> user.name </name>           <value> biswass </value> 
+    <name> user.dir </name>            <value> /home/biswass/workspace/benchmarks/javaGrande/classes </value> 
+    <memPeak> 101 </memPeak> 
+    <memUsed> 32 </memUsed> 
+    <memMax> 1029 </memMax> 
+    <compileTime> 2442 </compileTime> 
+    <gc> <name> PS Scavenge </name> <time> 7 </time> </gc>
+    <gc> <name> PS MarkSweep </name> <time> 26 </time> </gc>
+  </system>
+  <instrumented> JGFMolDynBenchSizeB harness/Callback jgfutil/JGFInstrumentor jgfutil/JGFSection3 jgfutil/JGFTimer moldyn/Barrier moldyn/JGFMolDynBench moldyn/TournamentBarrier moldyn/md moldyn/mdRunner moldyn/particle moldyn/random  </instrumented> 
+  <instrumentedNum> 12 </instrumentedNum> 
+  <skipped>  </skipped> 
+  <skippedNum> 0 </skippedNum> 
+  <sanityChecked>  </sanityChecked> 
+  <sanityCheckedNum> 0 </sanityCheckedNum> 
+  <counters>
+
+    <counter><name> "ArrayStateFactory: Size" </name>                    <value> 0 </value> </counter>
+    <counter><name> "ArrayStateFactory: Attic Move Time" </name>         <value> <total>0.00000</total> <count>0</count>  </value> </counter>
+    <counter><name> "ArrayStateFactory: Attic Hits" </name>              <value> 0 </value> </counter>
+
+    <counter><name> "Clone: Count" </name>                               <value> 0 </value> </counter>
+
+    <counter><name> "Handler: Count" </name>                             <value> 0 </value> </counter>
+
+    <counter><name> "ShadowLock: objects" </name>                        <value> 0 </value> </counter>
+
+    <counter><name> "ShadowThread: Count" </name>                        <value> 1 </value> </counter>
+    <counter><name> "ShadowThread: Max Live" </name>                     <value> 0 </value> </counter>
+    <counter><name> "ShadowThread: getCurrentThread() calls" </name>     <value> 0 </value> </counter>
+
+    <counter><name> "ShadowVolatile: objects" </name>                    <value> 0 </value> </counter>
+
+    <counter><name> "Time: Instrumenter" </name>                         <value> <total>201.000</total> <count>12</count> <ave>16.7500</ave> </value> </counter>
+  </counters>
+  <tool>
+    <name> tools.atomizer.AtomizerTool </name> 
+  </tool>
+  <tool>
+    <name> Last </name> 
+  </tool>
+  <threadCount> 1 </threadCount> 
+  <errorTotal> 109 </errorTotal> 
+  <distinctErrorTotal> 8 </distinctErrorTotal> 
+  <methods>
+    <method>
+      <name> moldyn/TournamentBarrier.DoBarrier(I)V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 100 </count> </error>
+    </method>
+    <method>
+      <name> jgfutil/JGFTimer.reset()V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 2 </count> </error>
+    </method>
+    <method>
+      <name> moldyn/JGFMolDynBench.JGFrun(I)V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 1 </count> </error>
+    </method>
+    <method>
+      <name> jgfutil/JGFInstrumentor.addTimer(Ljava/lang/String;Ljava/lang/String;I)V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 2 </count> </error>
+    </method>
+    <method>
+      <name> moldyn/md.initialise()V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 1 </count> </error>
+    </method>
+    <method>
+      <name> moldyn/JGFMolDynBench.JGFapplication()V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 1 </count> </error>
+    </method>
+    <method>
+      <name> moldyn/md.runiters()V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 1 </count> </error>
+    </method>
+    <method>
+      <name> moldyn/JGFMolDynBench.JGFinitialise()V(NullLoc) </name> 
+      <error> <name> Atomicity </name> <count> 1 </count> </error>
+    </method>
+  </methods>
+  <fields>
+  </fields>
+  <arrays>
+  </arrays>
+  <locks>
+  </locks>
+  <fieldAccesses>
+  </fieldAccesses>
+  <errorCountPerErrorType>
+    <errorType> <name> Atomicity </name> <count> 109 </count> </errorType>
+  </errorCountPerErrorType>
+  <warningsTotal> 0 </warningsTotal> 
+  <yikesTotal> 0 </yikesTotal> 
+  <failed> false </failed> 
+  <time> 22191 </time> 
+</entry>
+[RR: Time = 22191]
+[RR: Exiting: 0]

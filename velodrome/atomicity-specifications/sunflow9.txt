@@ -1,0 +1,28 @@
+# Trivial
+Lorg/sunflow/core/LightServer$1;.run ()V:202(0)
+Lorg/sunflow/core/renderer/SimpleRenderer$BucketThread;.run ()V:57(0)
+Lorg/sunflow/core/renderer/ProgressiveRenderer$SmallBucketThread;.run ()V:78(0)
+Lorg/sunflow/core/renderer/BucketRenderer$BucketThread;.run ()V:178(0)
+
+# The following methods cause trouble if it is part of a Phase 1 cycle, since it has almost 98% read/write accesses, and
+# Phase 2 runs into memory issues if while processing these transactions
+Lorg/sunflow/core/renderer/BucketRenderer;.access$300 (Lorg/sunflow/core/renderer/BucketRenderer;Lorg/sunflow/core/Display;IIILorg/sunflow/core/IntersectionState;)V:24(0)
+Lorg/sunflow/core/renderer/BucketRenderer;.renderBucket (Lorg/sunflow/core/Display;IIILorg/sunflow/core/IntersectionState;)V:199(0)
+
+# Merged results
+
+Lorg/sunflow/core/accel/BoundingIntervalHierarchy;.intersect (Lorg/sunflow/core/Ray;Lorg/sunflow/core/IntersectionState;)V:374(0)
+Lorg/sunflow/core/Geometry;.intersect (Lorg/sunflow/core/Ray;Lorg/sunflow/core/IntersectionState;)V:89(0)
+Lorg/sunflow/core/Geometry;.tesselate ()V:98(0)
+Lorg/sunflow/core/Instance;.intersect (Lorg/sunflow/core/Ray;Lorg/sunflow/core/IntersectionState;)V:133(0)
+Lorg/sunflow/core/InstanceList;.intersectPrimitive (Lorg/sunflow/core/Ray;ILorg/sunflow/core/IntersectionState;)V:30(0)
+Lorg/sunflow/core/LightServer;.access$008 (Lorg/sunflow/core/LightServer;)I:13(0)
+Lorg/sunflow/core/LightServer;.shadePhoton (Lorg/sunflow/core/ShadingState;Lorg/sunflow/image/Color;)V:260(0)
+Lorg/sunflow/core/LightServer;.traceDiffusePhoton (Lorg/sunflow/core/ShadingState;Lorg/sunflow/core/Ray;Lorg/sunflow/image/Color;)V:268(0)
+Lorg/sunflow/core/LightServer;.traceRefractionPhoton (Lorg/sunflow/core/ShadingState;Lorg/sunflow/core/Ray;Lorg/sunflow/image/Color;)V:292(0)
+Lorg/sunflow/core/Scene;.trace (Lorg/sunflow/core/Ray;Lorg/sunflow/core/IntersectionState;)V:193(0)
+Lorg/sunflow/core/shader/DiffuseShader;.scatterPhoton (Lorg/sunflow/core/ShadingState;Lorg/sunflow/image/Color;)V:40(0)
+Lorg/sunflow/core/shader/GlassShader;.scatterPhoton (Lorg/sunflow/core/ShadingState;Lorg/sunflow/image/Color;)V:90(0)
+Lorg/sunflow/core/ShadingState;.traceDiffusePhoton (Lorg/sunflow/core/Ray;Lorg/sunflow/image/Color;)V:654(0)
+Lorg/sunflow/core/ShadingState;.traceRefractionPhoton (Lorg/sunflow/core/Ray;Lorg/sunflow/image/Color;)V:637(0)
+

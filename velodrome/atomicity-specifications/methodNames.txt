@@ -1,0 +1,119 @@
+#Merged from AVD and Velodrome
+
+
+
+# Java library methods
+
+Ljava/lang/Thread;.run ():742(0)
+Ljava/lang/Runnable;.run ():61(0)
+Ljava/lang/System;.exit (I)V:577(-2)
+Ljava/lang/Thread;.join ()V:0(0)
+
+# Common DaCapo benchmark methods (both 2006 & 2009)
+LMMTkCallback;.<init> ()V:0(0)
+LMMTkCallback;.start ()V:42(0)
+LMMTkCallback;.start (Ljava/lang/String;)V:14(0)
+LMMTkCallback;.stop ()V:53(0)
+LMMTkCallback;.isWarmup ()Z:0(0)
+
+Ldacapo/Callback;.start (Ljava/lang/String;)V:9(0)
+Ldacapo/Callback;.start (Ljava/lang/String;Z)V:15(0)
+Ldacapo/Callback;.complete (Ljava/lang/String;Z)V:29(0)
+Ldacapo/Callback;.stop ()V:22(0)
+Ldacapo/Callback;.complete (Ljava/lang/String;ZZ)V:35(0)
+
+Lharness/Callback;.<init> ()V:0(0)
+Lharness/Callback;.start ()V:15(0)
+Lharness/Callback;.start (Ljava/lang/String;)V:8(0)
+Lharness/Callback;.start (Ljava/lang/String;Z)V:14(0)
+Lharness/Callback;.stop ()V:22(0)
+Lharness/Callback;.complete (Ljava/lang/String;Z)V:29(0)
+Lharness/Callback;.complete (Ljava/lang/String;ZZ)V:35(0)
+Lharness/Callback;.salutation (Z)V:24(0)
+Lharness/Callback;.startWarmup ()V:0(0)
+Lharness/Callback;.stopWarmup ()V:0(0)
+Lharness/Callback;.message (ZZJ)V:0(0)
+
+LHarness;.main ([Ljava/lang/String;)V:5(0)
+
+Ldacapo/TestHarness;.main ([Ljava/lang/String;)V:110(0)
+Ldacapo/TestHarness;.runBenchmark (Ljava/io/File;Ljava/lang/String;Ldacapo/TestHarness;)V:268(0)
+Ldacapo/TestHarness;.findClass ()Ljava/lang/Class;:414(0)
+Ldacapo/TestHarness;.rmdir (Ljava/io/File;)V:376(0)
+Ldacapo/TestHarness;.printUsage ()V:351(0)
+
+# Mostly for DaCapo 2006
+Ldacapo/Benchmark;.preIteration (Ljava/lang/String;)V:182(0)
+Ldacapo/Benchmark;.startIteration ()V:204(0)
+Ldacapo/Benchmark;.postIteration (Ljava/lang/String;)V:364(0)
+Ldacapo/Benchmark;.postIterationCleanup (Ljava/lang/String;)V:375(0)
+Ldacapo/Benchmark;.run (Ldacapo/Callback;Ljava/lang/String;Z)Z:126(50)
+Ldacapo/Benchmark;.cleanup ()V:391(0)
+Ldacapo/Benchmark/Main;.main ()V:18(0)
+Ldacapo/Benchmark;.validate (Ljava/lang/String;)Z:246(0)
+Ldacapo/Benchmark;.deleteTree (Ljava/io/File;)V:519(0)
+Ldacapo/Benchmark;.stopIteration ()V:230(0)
+Ldacapo/Benchmark;.deleteFile (Ljava/io/File;)V:532(0)
+Ldacapo/Benchmark;.iterate (Ljava/lang/String;)V:222(0)
+
+LMMTkHarness;.harnessBegin ()V:41(0)
+LMMTkHarness;.harnessEnd ()V:49(0)
+
+Ldacapo/TeePrintStream;.openLog ()V:37(0)
+Ldacapo/TeePrintStream;.closeLog ()V:40(0)
+Ldacapo/TeeOutputStream;.openLog ()V:50(0)
+Ldacapo/TeeOutputStream;.closeLog ()V:54(0)
+
+# Should be for DaCapo 2009
+Lorg/dacapo/harness/TestHarness;.main ([Ljava/lang/String;)V:100(0)
+Lorg/dacapo/harness/TestHarness;.runBenchmark (Ljava/io/File;Ljava/lang/String;Lorg/dacapo/harness/TestHarness;)V:207(0)
+Lorg/dacapo/harness/CommandLineArgs;.getSize ()Ljava/lang/String;:0(0)
+Lorg/dacapo/harness/TestHarness;.getBuildVersion ()Ljava/lang/String;:0(0)
+Lorg/dacapo/harness/Benchmark;.run (Lorg/dacapo/harness/Callback;Ljava/lang/String;)Z:142(0)
+Lorg/dacapo/harness/Benchmark;.iterate (Ljava/lang/String;)V:304(0)
+Lorg/dacapo/harness/Benchmark;.preIteration (Ljava/lang/String;)V:260(0)
+Lorg/dacapo/harness/Benchmark;.startIteration ()V:282(0)
+Lorg/dacapo/harness/Benchmark;.stopIteration ()V:311(0)
+Lorg/dacapo/harness/Benchmark;.postIteration (Ljava/lang/String;)V:467(0)
+Lorg/dacapo/harness/Benchmark;.useBenchmarkClassLoader ()V:327(0)
+Lorg/dacapo/harness/Benchmark;.prepare (Ljava/lang/String;)V:0(0)
+Lorg/dacapo/harness/TeePrintStream;.openLog ()V:41(0)
+Lorg/dacapo/harness/TeePrintStream;.closeLog ()V:45(0)
+Lorg/dacapo/harness/TeeOutputStream;.openLog ()V:58(0)
+Lorg/dacapo/harness/TeeOutputStream;.closeLog ()V:62(0)
+Lorg/dacapo/harness/TeeOutputStream;.newLog ()V:50(0)
+
+Lorg/dacapo/harness/Callback;.complete (Ljava/lang/String;Z)V:192(0)
+Lorg/dacapo/harness/Callback;.stop ()V:178(0)
+Lorg/dacapo/harness/Callback;.start (Ljava/lang/String;)V:161(0)
+Lorg/dacapo/harness/Callback;.start (Ljava/lang/String;Z)V:170(0)
+Lorg/dacapo/harness/Callback;.complete (Ljava/lang/String;ZZ)V:201(0)
+
+# microbenchmarks
+
+Latomicity/test2;.main ([Ljava/lang/String;)V:5(0)
+Latomicity/ThreadDemo2;.main ([Ljava/lang/String;)V:7(0)
+Latomicity/NewThread2;.run ()V:21(0)
+Latomicity/ThreadDemo4;.main ([Ljava/lang/String;)V:8(0)
+Latomicity/NewThread4;.run ()V:24(0)
+Latomicity/ThreadDemo5;.main ([Ljava/lang/String;)V:8(0)
+Latomicity/NewThread5;.run ()V:25(0)
+Latomicity/ThreadDemo6;.main ([Ljava/lang/String;)V:5(0)
+Latomicity/NewThread6;.run ()V:34(0)
+#Latomicity/NewThread6;.access ()V:39(0)
+Latomicity/ThreadDemo7;.main ([Ljava/lang/String;)V:5(0)
+Latomicity/NewThread7;.run ()V:25(0)
+
+# Doug Lea's concurrent library, details copied from velodrome specification. Each of the following methods contain 
+# a synchronization primitive or overrides Thread::run()
+
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner;.run ()V:793(0)
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner;.scanWhileIdling ()V:718(0)
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup$InvokableFJTask;.awaitTermination ()V:611(0)
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;.checkActive (LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner;J)V:534(0)
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;.invoke (Ljava/lang/Runnable;)V:214(0)
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;.setActive (LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner;)V:465(0)
+LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;.signalNewTask ()V:565(0) 
+LEDU/oswego/cs/dl/util/concurrent/LinkedQueue;.take ()Ljava/lang/Object;:105(0)
+
+

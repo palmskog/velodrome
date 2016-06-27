@@ -1,0 +1,23 @@
+# Elevator
+
+Lelevator/Elevator;.main ([Ljava/lang/String;)V:117(0)
+# Does Velodrome include this in their count?
+Lelevator/Lift;.run ()V:60(0)
+Lelevator/Lift;.sleep (J)V:866(0)
+# This method contains a join()
+Lelevator/Elevator;.waitForLiftsToFinishOperation ()V:105(0)
+Lelevator/Lift;.join ()V:0(0)
+# This method contains a sleep, so shouldn't be reported
+Lelevator/Elevator;.begin ()V:73(0)
+
+# Velodrome results
+
+Lelevator/Lift;.doIdle ()V:79(0)
+Lelevator/Controls;.claimUp (Ljava/lang/String;I)Z:50(0)
+
+
+#Lelevator/Elevator;.Elevator (Ljava/lang/String;)V:26(0)
+#Lelevator/Controls;.claimDown (Ljava/lang/String;I)Z:66(0)
+#Lelevator/Lift;.doMoving ()V:126(0)
+#Lelevator/Controls;.pushUp (II)V:36(0)
+#Lelevator/Controls;.pushDown (II)V:24(0)

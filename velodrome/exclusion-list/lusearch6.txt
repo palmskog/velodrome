@@ -1,0 +1,10 @@
+#Lusearch6
+
+Ldacapo/lusearch/LusearchHarness$QueryThread;.run ()V:159(0)
+#Lorg/dacapo/lusearch/Search$QueryThread;.run ()V:176(0)
+#Lorg/dacapo/lusearch/Search$QueryProcessor;.run ()V:217(0)
+
+# Velodrome results
+
+ Ldacapo/lusearch/LusearchHarness$QueryThread;.runQuery ()V:166(0)
+

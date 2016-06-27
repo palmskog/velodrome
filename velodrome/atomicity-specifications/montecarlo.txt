@@ -1,0 +1,13 @@
+
+LJGFMonteCarloBenchSizeA;.main ([Ljava/lang/String;)V:32(0)
+Lmontecarlo/AppDemo;.runThread ()V:151(0)
+Lmontecarlo/CallAppDemo;.runiters ()V:50(0)
+Lmontecarlo/JGFMonteCarloBench;.runiters ()V:0(0)
+Lmontecarlo/JGFMonteCarloBench;.JGFapplication ()V:45(0)
+Lmontecarlo/JGFMonteCarloBench;.JGFrun (I)V:72(0)
+Lmontecarlo/AppDemoThread;.run ()V:366(0)
+
+# Merged results
+
+Lmontecarlo/PriceStock;.<init> ()V:85(0)
+Lmontecarlo/PriceStock;.run ()V:135(0)

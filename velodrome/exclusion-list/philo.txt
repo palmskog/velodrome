@@ -1,0 +1,13 @@
+# Philo
+
+LPhilo;.main ([Ljava/lang/String;)V:69(0)
+LPhilo;.run ()V:49(0)
+LPhilo;.start ()V:917(0)
+LPhilo;.join ()V:675(0)
+LPhilo;.sleep (J)V:866(0)
+
+# These methods have wait/notify calls within them
+#LTable;.getForks (I)I:14(0)
+#LTable;.putForks (I)V:28(0)
+
+# Velodrome results

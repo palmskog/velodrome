@@ -1,0 +1,19 @@
+# Tsp
+
+LTsp;.main ([Ljava/lang/String;)V:27(0)
+LTspSolver;.run ()V:33(0)
+
+# Velodrome results
+
+LTspSolver;.Worker ()V:37(0)
+LTspSolver;.get_tour (I)I:454(0)
+LTspSolver;.recursive_solve (I)V:473(0)
+LTspSolver;.find_solvable_tour ()I:362(0)
+LTspSolver;.visit_nodes (I)V:520(0)
+LTspSolver;.split_tour (I)V:270(0)
+LTspSolver;.set_best (I[I)V:103(0)
+
+
+# Our implementation showed these violations with map16c input file and 8 threads, but not with map15c and 4 threads
+#LTspSolver;.calc_bound (I)I:0(0)
+#LTspSolver;.new_tour (II)I:0(0)

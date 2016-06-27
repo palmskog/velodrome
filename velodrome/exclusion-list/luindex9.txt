@@ -1,0 +1,14 @@
+# Luindex9
+
+# Trivial
+Lorg/dacapo/luindex/Index;.main (Ljava/io/File;[Ljava/lang/String;)V:66(0)
+
+# Not sure about these, just blindly searched for all Thread::run() methods in the lucene library
+Lorg/apache/lucene/index/ConcurrentMergeScheduler$MergeThread;.run ()V:248(0)
+Lorg/apache/lucene/search/MultiSearcherThread;.run ()V:248(0)
+Lorg/apache/lucene/search/TimeLimitedCollector$TimerThread;.run ()V:69(0)
+
+
+# Velodrome results
+
+

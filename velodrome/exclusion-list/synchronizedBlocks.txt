@@ -1,0 +1,39 @@
+# Hsqldb6
+
+# These are with synch blocks as transactions
+Lorg/hsqldb/Session;.commit()V:491(14)
+Lorg/hsqldb/Session;.execute (Lorg/hsqldb/Result;)Lorg/hsqldb/Result;:873(39)
+
+# Xalan9
+
+# These are with synch blocks as transactions
+Lorg/apache/xalan/transformer/TransformerImpl;.transform (Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;Z)V:1266(7)
+Lorg/apache/xml/dtm/ObjectFactory;.lookUpFactoryClassName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:294(145)
+
+# Pmd9
+
+# No violations were reported
+
+# Luindex9
+
+# No violations were reported
+
+
+# Lusearch9-fix
+ 
+# The following has a notify, do we report it?
+Lorg/dacapo/lusearch/Search$QueryProcessor;.run()V:249(128)
+
+
+# Tsp
+
+# These are with synch blocks as transactions
+LTspSolver;.get_tour (I)I:454(5)
+LTspSolver;.set_best (I[I)V:109(13)
+
+
+# Sunflow9
+
+# No violations have been reported
+
+

@@ -1,0 +1,9 @@
+# Raja
+
+# Trivially left out
+Lraja/ui/CommandLineUI;.main ([Ljava/lang/String;)V:0(0)
+Lraja/renderer/BasicRenderer;.run ()V:53(0)
+
+# AVD results
+
+

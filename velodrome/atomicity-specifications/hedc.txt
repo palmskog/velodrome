@@ -1,0 +1,15 @@
+# HEDC
+
+Lhedc/Tester;.main ([Ljava/lang/String;)V:48(0)
+Lhedc/Tester;.run ()V:109(0)
+
+# Does Velodrome consider this to be a violation?
+Lhedc/PooledExecutorWithInvalidate$Worker;.run ()V:297(0)
+Lhedc/Task;.run ()V:38(0)
+
+# Merged results
+
+Lhedc/MetaSearchRequest;.go ()V:42(0)
+Lhedc/MetaSearchImpl;.search (Ljava/util/Hashtable;Lhedc/MetaSearchRequest;)Ljava/util/List;:69(0)
+Lhedc/PooledExecutorWithInvalidate;.execute (Lhedc/Task;)V:414(0)
+Lhedc/PooledExecutorWithInvalidate;.getTask ()Lhedc/Task;:279(0)
