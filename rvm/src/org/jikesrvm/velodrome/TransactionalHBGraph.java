@@ -32,7 +32,7 @@ public class TransactionalHBGraph {
   /** Access to this variable should be protected by {@code velodromeEdgeCounterLock} */
   private static int edgeNumber = 0;
   
-  private final static int cycleVerbosity = 0; // >= 1 will print cycle information
+  private final static int cycleVerbosity = 1; // >= 1 will print cycle information
   
   private static int dfsCounter = 0;
   
