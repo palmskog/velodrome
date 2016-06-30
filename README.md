@@ -1,3 +1,5 @@
+# Velodrome
+
 DoubleChecker: Efficient Sound and Precise Atomicity Checking
 
 Swarnendu Biswas, Jipeng Huang, Aritra Sengupta, and Michael Bond
@@ -5,9 +7,9 @@ The Ohio State University
 April 2014
 
 This document gives a brief description of the project, code, and instructions
-to build, and execute the projects.
+to build and execute the project.
 
-OVERVIEW
+## OVERVIEW
 
 DoubleChecker is a novel sound and precise dynamic atomicity checker whose key
 insight lies in its use of two new cooperating dynamic analyses. Its imprecise
@@ -35,11 +37,12 @@ to the Velodrome paper is: http://dl.acm.org/citation.cfm?id=1375618. To have a
 sound implementation, we encapsulate each program access in small critical
 sections to avoid loss of metadata updates due to potential data races.
 
-BUILDING THE PROJECT
+## BUILDING THE PROJECT
 
 Build Velodrome:
 
 Install `gcc-multilib` and `g++-multilib`. In Ubuntu:
+    
     $ apt-get install gcc-multilib g++-multilib
 
 Go to the source directory and run:
@@ -47,7 +50,7 @@ Go to the source directory and run:
     $ ant -Dhost.name=x86_64-linux -Dconfig.name=FastAdaptiveGenImmix -Dconfig.variant=VelodromeASDefault -Dconfig.config-class=org.jikesrvm.config.VelodromeASDefault
 
 
-EXECUTING THE PROJECT
+## EXECUTING THE PROJECT
 
 Before you can execute a project, you need to create a symlink in your $HOME
 directory for the project.
@@ -70,9 +73,9 @@ collectors are supported for Velodrome. It is possible to support other
 collectors in DoubleChecker as well.
 
 
-BRIEF GUIDE TO THE SOURCE CODE
+## BRIEF GUIDE TO THE SOURCE CODE
 
-Our implementations build on Jikes RVM 3.1.3. You can use Eclipse to view and/or
+The implementation builds on Jikes RVM 3.1.3. You can use Eclipse to view and/or
 modify the source code. Please refer to the Jikes RVM resources on how to set up
 Jikes in Eclipse.
  
